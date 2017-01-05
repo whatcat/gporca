@@ -3,9 +3,13 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 project(gpopt LANGUAGES CXX C)
 
-set(GPORCA_VERSION_MAJOR 1)
-set(GPORCA_VERSION_MINOR 697)
-set(GPORCA_VERSION_STRING ${GPORCA_VERSION_MAJOR}.${GPORCA_VERSION_MINOR})
+if (NOT VERSION_FILE)
+execute_process(COMMAND git describe --tags --dirty
+	OUTPUT_VARIABLE GPORCA_VERSION_STRING
+	OUTPUT_STRIP_TRAILING_WHITESPACE
+	WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+	)
+endif(NOT VERSION_FILE)
 
 # Whenever an ABI-breaking change is made to GPORCA, this should be incremented.
 # ABI changes include removing functions, and adding or removing function
