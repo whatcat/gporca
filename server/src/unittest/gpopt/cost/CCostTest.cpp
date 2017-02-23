@@ -272,13 +272,18 @@ CCostTest::EresUnittest_Parsing()
 	CAutoMemoryPool amp;
 	IMemoryPool *pmp = amp.Pmp();
 	CParseHandlerDXL *pphDXL = CDXLUtils::PphdxlParseDXLFile(pmp,"../data/dxl/cost/cost0.xml", NULL);
-	ICostModelParams *pcp = pphDXL->Pcp();
+	ICostModelParams *pcp = pphDXL->Poconf()->Pcm()->Pcp();
 
 	{
 		CAutoTrace at(pmp);
 		at.Os() << " Parsed cost params: " << std::endl;
 		pcp->OsPrint(at.Os());
 	}
+	
+	// SeqIOBandwidth value is set to 4000 in cost0.xml
+	CDouble dSeqIOBandwidth = pcp->PcpLookup("SeqIOBandwidth")->DVal();
+	GPOS_ASSERT(dSeqIOBandwidth == 4000);
+	
 	GPOS_DELETE(pphDXL);
 
 	return GPOS_OK;

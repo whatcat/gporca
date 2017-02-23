@@ -375,6 +375,9 @@ namespace gpopt
 			// set cost model params
 			void SetParams(DrgPcp *pdrgpcp);
 
+			virtual
+			void SetPcp(ICostModelParams *pcp) = 0;
+
 			// create a default cost model instance
 			static
 			ICostModel *PcmDefault(IMemoryPool *pmp);

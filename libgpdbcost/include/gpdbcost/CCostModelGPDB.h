@@ -217,7 +217,9 @@ namespace gpdbcost
 				return m_pcp;
 			}
 
-			
+			virtual
+			void SetPcp(ICostModelParams *pcp);
+
 			// main driver for cost computation
 			virtual
 			CCost Cost(CExpressionHandle &exprhdl, const SCostingInfo *pci) const;

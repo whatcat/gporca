@@ -14,6 +14,7 @@
 
 #include "gpos/base.h"
 #include "naucrates/dxl/parser/CParseHandlerBase.h"
+#include "naucrates/dxl/parser/CParseHandlerCostParams.h"
 
 namespace gpdxl
 {
@@ -35,6 +36,7 @@ namespace gpdxl
 
 			// cost model
 			ICostModel *m_pcm;
+			CParseHandlerCostParams *m_pphcp;
 			
 			// private copy ctor
 			CParseHandlerCostModel(const CParseHandlerCostModel&); 

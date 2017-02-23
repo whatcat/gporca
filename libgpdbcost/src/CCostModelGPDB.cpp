@@ -1586,4 +1586,15 @@ CCostModelGPDB::Cost
 	return pfnc(m_pmp, exprhdl, this, pci);
 }
 
+void
+CCostModelGPDB::SetPcp
+	(
+	ICostModelParams *pcp
+	)
+{
+	m_pcp->Release();
+	m_pcp = dynamic_cast<CCostModelParamsGPDB*>(pcp);
+	GPOS_RTL_ASSERT(NULL != m_pcp);
+}
+
 // EOF

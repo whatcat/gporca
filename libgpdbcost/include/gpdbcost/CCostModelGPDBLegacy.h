@@ -212,6 +212,9 @@ namespace gpdbcost
 				return ICostModel::EcmtGPDBLegacy;
 			}
 
+			virtual
+			void SetPcp(ICostModelParams *pcp);
+
 	}; // class CCostModelGPDBLegacy
 
 }
