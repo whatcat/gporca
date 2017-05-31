@@ -39,7 +39,6 @@ add_library(gpos
             include/gpos/common/CEnumSet.h
             include/gpos/common/CEnumSetIter.h
             include/gpos/common/CHashMap.h
-            include/gpos/common/CHashMap.inl
             include/gpos/common/CHashMapIter.h
             include/gpos/common/CHashMapIter.inl
             include/gpos/common/CHashSet.h
