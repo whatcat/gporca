@@ -50,7 +50,6 @@ add_library(gpos
             include/gpos/common/CSyncHashtableIter.h
             include/gpos/common/CSyncList.h
             include/gpos/common/CSyncPool.h
-            include/gpos/common/CSyncPool.inl
             include/gpos/common/ITimer.h
             include/gpos/common/pthreadtypes.h
             include/gpos/error/CAutoLogger.h
