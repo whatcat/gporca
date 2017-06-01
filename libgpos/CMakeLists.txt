@@ -54,7 +54,6 @@ add_library(gpos
             include/gpos/common/CSyncHashtableAccessByKey.h
             include/gpos/common/CSyncHashtableAccessByKey.inl
             include/gpos/common/CSyncHashtableAccessorBase.h
-            include/gpos/common/CSyncHashtableAccessorBase.inl
             include/gpos/common/CSyncHashtableIter.h
             include/gpos/common/CSyncList.h
             include/gpos/common/CSyncList.inl
