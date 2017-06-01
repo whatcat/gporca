@@ -70,7 +70,6 @@ add_library(gpos
             include/gpos/sync/CAtomicCounter.h
             include/gpos/sync/CMutex.h
             include/gpos/sync/CSpinlock.h
-            include/gpos/sync/CSpinlock.inl
             include/gpos/task/CTaskId.h
             include/gpos/task/CTaskLocalStorageObject.h
             include/gpos/task/CTraceFlagIter.h
