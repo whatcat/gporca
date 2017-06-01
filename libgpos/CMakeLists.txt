@@ -42,7 +42,6 @@ add_library(gpos
             include/gpos/common/CHashMapIter.h
             include/gpos/common/CHashSet.h
             include/gpos/common/CHashSetIter.h
-            include/gpos/common/CHashSetIter.inl
             include/gpos/common/clibtypes.h
             include/gpos/common/CList.h
             include/gpos/common/CList.inl
