@@ -69,7 +69,6 @@ add_library(gpos
             include/gpos/net/nettypes.h
             include/gpos/sync/CAtomicCounter.h
             include/gpos/sync/CMutex.h
-            include/gpos/sync/CMutex.inl
             include/gpos/sync/CSpinlock.h
             include/gpos/sync/CSpinlock.inl
             include/gpos/task/CTaskId.h
