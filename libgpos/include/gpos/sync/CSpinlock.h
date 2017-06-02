@@ -60,19 +60,25 @@ namespace gpos
 				:
 				m_ulRank(ulRank)
 			{}
+        
+            // ctor
+            CSpinlockBase
+            ()
+            :
+            m_ulRank(0)
+            {}
 		
 			// dtor
-			virtual
-			~CSpinlockBase()
-			{};
+			virtual ~CSpinlockBase()
+			{}
 
 			// acquire spinlock
-			virtual
-			void Lock() = 0;
+			virtual void Lock()
+            {}
 
 			// release spinlock
-			virtual
-			void Unlock() = 0;
+			virtual void Unlock()
+            {}
 			
 
 			// decide trackability of spinlock
@@ -89,8 +95,10 @@ namespace gpos
 			
 #ifdef GPOS_DEBUG
 			// test whether we own the spinlock
-			virtual
-			BOOL FOwned() const = 0;
+			virtual BOOL FOwned() const
+            {
+                return true;
+            }
 #endif // GPOS_ASSERT
 
 			// link for accounting list

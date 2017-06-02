@@ -22,7 +22,8 @@
 
 #include "gpos/base.h"
 #include "gpos/sync/CAutoSpinlock.h"
-
+#include "gpopt/spinlock.h"
+#include "gpos/sync/CSpinlock.h"
 
 #include "gpos/common/CList.h"
 
@@ -80,7 +81,7 @@ namespace gpos
 					SBucket() {};
 				
 					// spinlock to protect bucket
-					S m_slock;
+					CSpinlockBase m_slock;
 				
 					// hash chain
 					CList<T> m_list;
