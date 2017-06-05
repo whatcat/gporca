@@ -19,7 +19,6 @@ add_library(gpopt
             include/gpopt/base/CMaxCard.h
             include/gpopt/base/CPropSpec.h
             include/gpopt/base/CStateMachine.h
-            include/gpopt/base/CStateMachine.inl
             include/gpopt/base/CUtils.inl
             include/gpopt/base/IComparator.h
             include/gpopt/cost/CCost.h
