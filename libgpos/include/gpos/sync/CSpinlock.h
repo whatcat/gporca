@@ -139,7 +139,7 @@ namespace gpos
 		// ctor
 		CSpinlockRanked<ulRank>()
 			:
-			CSpinlockBase(ulRank),
+			CSpinlockBase(0),
 #ifdef GPOS_DEBUG
 			m_wid(false),
 #endif // GPOS_DEBUG
