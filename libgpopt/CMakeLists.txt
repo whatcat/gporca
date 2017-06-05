@@ -45,7 +45,6 @@ add_library(gpopt
             include/gpopt/operators/CScalarSubqueryNotExists.h
             include/gpopt/operators/ops.h
             include/gpopt/search/CJobStateMachine.h
-            include/gpopt/search/CJobStateMachine.inl
             include/gpopt/search/CTreeMap.h
             include/gpopt/search/CTreeMap.inl
             include/gpopt/spinlock.h
