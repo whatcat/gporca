@@ -73,7 +73,6 @@ add_library(gpopt
             include/gpopt/xforms/CXformLeftSemiApplyIn2LeftSemiJoinNoCorrelations.h
             include/gpopt/xforms/CXformLeftSemiApplyInWithExternalCorrs2InnerJoin.h
             include/gpopt/xforms/CXformPushGbBelowSetOp.h
-            include/gpopt/xforms/CXformPushGbBelowSetOp.inl
             include/gpopt/xforms/CXformPushGbBelowUnion.h
             include/gpopt/xforms/CXformPushGbBelowUnionAll.h
             include/gpopt/xforms/CXformSelect2DynamicBitmapBoolOp.h
