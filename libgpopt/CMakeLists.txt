@@ -46,7 +46,6 @@ add_library(gpopt
             include/gpopt/operators/ops.h
             include/gpopt/search/CJobStateMachine.h
             include/gpopt/search/CTreeMap.h
-            include/gpopt/search/CTreeMap.inl
             include/gpopt/spinlock.h
             include/gpopt/xforms/CXformAntiSemiJoinAntiSemiJoinNotInSwap.h
             include/gpopt/xforms/CXformAntiSemiJoinAntiSemiJoinSwap.h
