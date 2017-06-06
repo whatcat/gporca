@@ -56,7 +56,6 @@ add_library(gpopt
             include/gpopt/xforms/CXformAntiSemiJoinNotInSemiJoinSwap.h
             include/gpopt/xforms/CXformAntiSemiJoinSemiJoinSwap.h
             include/gpopt/xforms/CXformApply2Join.h
-            include/gpopt/xforms/CXformApply2Join.inl
             include/gpopt/xforms/CXformContext.h
             include/gpopt/xforms/CXformImplementCorrelatedApply.h
             include/gpopt/xforms/CXformImplementCorrelatedApply.inl
